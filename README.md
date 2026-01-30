@@ -1,28 +1,32 @@
-# ratchet-gpu
+# Six Birds: Neural Substrate
 
-Minimal CUDA scaffolding for a deterministic GPU smoke test and CLI harness.
+This repository contains the **neural/meta-layer substrate** for the paper:
 
-## Paper reference (Zenodo)
+> **To Wake a Stone with Six Birds: A Life is A Theory**
+>
+> Archived at: https://zenodo.org/records/18420406
 
-This repository is referenced by the paper archived at:
+This paper is the life-focused instantiation of the emergence calculus introduced in *Six Birds: Foundations of Emergence Calculus*. It demonstrates how the canonical theory-package view (microstate, lens/observables, definability, completion/packaging rule, and audit) can be instantiated in working substrates, and what life-like phenomena are observed in those instantiations.
 
-https://zenodo.org/records/18420406
+## What this repository provides
 
-## How this repo connects to the paper
+The neural/meta-layer substrate implements:
 
-This repo is the neural/meta-layer substrate used in the paper’s canonical
-theory-package instantiation (microstate, lenses/observables, definability,
-completion/packaging rule, audit). It supplies the concrete state space,
-stroboscopic diagnostics, hazard response under matched baselines, and the
-refined-lens predicate families (motif inventories, proto-syntax shifts, and
-intervention-conditioned decoding statistics with shift-null controls).
+- **Budgeted token-mediated coupling** for resource-constrained computation
+- **Stroboscopic diagnostics** for observing system dynamics
+- **Hazard response under matched baselines** for controlled experiments
+- **Refined-lens predicate families**: motif inventories, proto-syntax shifts, and intervention-conditioned decoding statistics with shift-null controls
 
-Scope and limitations (paper-consistent):
-- Protocol holonomy (P3) is reported as route-dependence diagnostics; arrow-of-time
-  claims require a clean audit/drive channel (P6) separated from a calibrated null.
-- Audit quantities reported here are proxies, not full path-space KL audits.
-- Idempotence defects of the completion/packaging operator are not measured.
-- “Novelty/extension” is lens-relative and not claimed as unbounded open-ended evolution.
+See also: [six-birds-particle](https://github.com/anthropics/six-birds-particle) for the particle-based substrate.
+
+## Scope and limitations
+
+The paper is explicit about what it does and does not establish:
+
+- Protocol holonomy (P3) is reported as route-dependence diagnostics; arrow-of-time claims require a clean audit/drive channel (P6) separated from a calibrated null
+- Reported audit quantities are proxies, not full path-space KL audits
+- Idempotence defects of the completion/packaging operator are not measured
+- "Novelty/extension" is lens-relative and not claimed as unbounded open-ended evolution
 
 ## Build
 
