@@ -1,0 +1,25 @@
+{
+  "output": {
+    "filePath": "repomix-output.txt",
+    "style": "plain"
+  },
+  "include": [
+    "**/*.py"
+  ],
+  "ignore": {
+    "useGitignore": true,
+    "customPatterns": [
+      "**/node_modules/**",
+      "**/__pycache__/**",
+      "**/*.pyc",
+      "**/build/**",
+      "**/dist/**",
+      "**/.git/**",
+      "**/venv/**",
+      "**/.venv/**",
+      "**/env/**",
+      "**/.env/**",
+      "repomix-output.*"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+"""Core lattice substrate for ratchet-gpu."""
+
+from .energy import (
+    delta_e_k_local_exchange,
+    delta_e_k_neighbor_trade,
+    delta_e_n_flip,
+    delta_e_s_step,
+    delta_e_spin_flip,
+    delta_e_w_local_exchange,
+    delta_e_w_neighbor_exchange,
+    delta_phi_k_local_exchange,
+    delta_phi_k_neighbor_trade,
+    energy_bar,
+    energy_inter,
+    energy_total,
+    energy_w,
+    mismatch,
+    mismatch_mean,
+    cross_layer_pred,
+    sigma_hat,
+)
+from .diagnostics import (
+    compute_snapshot,
+    cross_mismatch,
+    cross_pred_sigma,
+    ep_totals,
+    ep_windowed,
+    k_kernel_proxies,
+)
+from .ep import EPTracker, StrobeTracker
+from .kernels import (
+    k_local_exchange,
+    k_neighbor_trade,
+    k_p5_exchange,
+    n_flip,
+    s_step,
+    spin_flip_color,
+    w_local_exchange,
+    w_neighbor_exchange,
+)
+from .lattice import DEFAULT_STENCIL_POLICY, Lattice, gather_neighbors, generate_stencil
+from .params import Params
+from .sim import run_null, run_sim
+from .state import State
+
+__all__ = [
+    "DEFAULT_STENCIL_POLICY",
+    "Lattice",
+    "Params",
+    "State",
+    "EPTracker",
+    "StrobeTracker",
+    "delta_e_k_local_exchange",
+    "delta_e_k_neighbor_trade",
+    "delta_e_n_flip",
+    "delta_e_s_step",
+    "delta_e_spin_flip",
+    "delta_e_w_local_exchange",
+    "delta_e_w_neighbor_exchange",
+    "delta_phi_k_local_exchange",
+    "delta_phi_k_neighbor_trade",
+    "energy_bar",
+    "energy_inter",
+    "energy_total",
+    "energy_w",
+    "mismatch",
+    "mismatch_mean",
+    "cross_layer_pred",
+    "compute_snapshot",
+    "cross_mismatch",
+    "cross_pred_sigma",
+    "ep_totals",
+    "ep_windowed",
+    "k_kernel_proxies",
+    "sigma_hat",
+    "gather_neighbors",
+    "generate_stencil",
+    "k_local_exchange",
+    "k_neighbor_trade",
+    "k_p5_exchange",
+    "n_flip",
+    "run_null",
+    "run_sim",
+    "s_step",
+    "spin_flip_color",
+    "w_local_exchange",
+    "w_neighbor_exchange",
+]

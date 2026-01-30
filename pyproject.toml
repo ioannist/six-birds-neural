@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ratchet-gpu"
+version = "0.0.0"
+description = "Core lattice substrate for ratchet-gpu."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+]
+
+[project.optional-dependencies]
+recommended = [
+    "numpy",
+]
+dev = [
+    "pytest",
+]
+render = [
+    "imageio",
+    "Pillow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ratchet_gpu*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "cuda: requires CUDA",
+    "contract: scientific contract tests",
+    "slow: long-running tests",
+]

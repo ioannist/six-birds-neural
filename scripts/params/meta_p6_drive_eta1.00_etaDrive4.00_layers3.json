@@ -1,0 +1,35 @@
+{
+  "B_k": 2,
+  "B_w": 369,
+  "J": 1.0,
+  "beta": 0.25,
+  "config_id": "phase7_meta_p6_drive_eta1.00_etaDrive4.00_l3",
+  "eta": 1.0,
+  "eta_drive": 4.0,
+  "kernel_weights": {
+    "k_local": 1.0,
+    "k_neighbor_trade": 1.0,
+    "k_p5_exchange": 1.0,
+    "n_flip": 1.0,
+    "s_step": 1.0,
+    "spin_flip_color0": 1.0,
+    "spin_flip_color1": 1.0,
+    "w_local": 1.0,
+    "w_neighbor": 1.0
+  },
+  "l_k": 3,
+  "l_s": 0,
+  "l_w": 4,
+  "layers": 3,
+  "p3_on": false,
+  "p6_on": true,
+  "pass": true,
+  "radius_k": 2,
+  "radius_w": 3,
+  "shape": [
+    24,
+    24
+  ],
+  "strobe_signature": "mag_stag",
+  "w_neighbor_weight": 0.25
+}

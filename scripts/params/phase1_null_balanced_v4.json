@@ -1,0 +1,33 @@
+{
+  "B_k": 0,
+  "B_w": 410,
+  "J": 1.0,
+  "beta": 0.5,
+  "config_id": "rw3_b0.50_J1.00_wf0.05_wn0.25",
+  "eta": 0.0,
+  "eta_drive": 0.0,
+  "kernel_weights": {
+    "k_local": 0.0,
+    "k_neighbor_trade": 0.0,
+    "k_p5_exchange": 0.0,
+    "n_flip": 0.0,
+    "s_step": 0.0,
+    "spin_flip_color0": 1.0,
+    "spin_flip_color1": 1.0,
+    "w_local": 1.0,
+    "w_neighbor": 0.25
+  },
+  "l_k": 1,
+  "l_s": 0,
+  "l_w": 4,
+  "layers": 2,
+  "p3_on": false,
+  "p6_on": false,
+  "radius_k": 0,
+  "radius_w": 2,
+  "shape": [
+    16,
+    16
+  ],
+  "w_neighbor_weight": 0.25
+}
